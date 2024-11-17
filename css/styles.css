@@ -192,8 +192,40 @@ nav li {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.article-one,
+.article-two {
+    display: flex;
+    margin-top: 50px;
+}
+
+.article-one section,
+.article-two section {
+    margin: 20px;
+    text-align: center;
+    font-family: Helvetica;
+    color: #333;
+}
+
+.article-one img, 
+.article-two img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    object-fit: cover; 
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    font-family: Helvetica;
+    color: #333;
+}
+
 @media only screen and (max-width: 768px) {
-    .container {
+    .container,
+    .article-one,
+    .article-two {
         flex-wrap: wrap; 
         flex-direction: column; 
     }
